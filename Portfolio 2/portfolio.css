@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  padding: 20px 0;
+  align-items: center;
+}
+.logo {
+  width: 40%;
+  padding-left: 60px;
+}
+.lists {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  font-size: 14px;
+  font-weight: bold;
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+#home {
+  display: flex;
+  padding: 20px 60px;
+  background: url(./images/download\ \(2\).jpeg);
+  background-repeat: no-repeat;
+  background-size: 1480px;
+}
+.description-general-container {
+  width: 80%;
+  margin: auto 0;
+  color: white;
+}
+p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.description-general-container p {
+  width: 70%;
+}
+.greeting {
+  color: tomato;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+h1 {
+  font-size: 40px;
+}
+button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  margin: 20px 20px 0 0;
+  cursor: pointer;
+}
+
+#about {
+  display: flex;
+  padding: 60px;
+}
+.about-img {
+  width: 100%;
+}
+.about-img img {
+  width: 300px;
+}
+.about-discription {
+  padding-left: 20px;
+}
+h2 span {
+  color: tomato;
+}
+.about-details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+h5 {
+  color: tomato;
+}
+
+@media screen and (max-width: 520px) {
+  .lists {
+    display: none;
+  }
+  .home-img img {
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    bottom: 110px;
+  }
+  .description-general-container {
+    padding-top: 60px;
+  }
+  .greeting {
+    display: none;
+  }
+  p {
+    font-size: 12px;
+  }
+  #about {
+    padding-left: 30px;
+    margin-bottom: 70px;
+  }
+  .about-img {
+    width: 50%;
+  }
+  .about-img img {
+    width: 230px;
+  }
+  .about-details-container {
+    grid-template-columns: 1fr;
+    font-weight: bold;
+  }
+  .about-discription h5 {
+    position: absolute;
+    left: 100px;
+  }
+  .about-details-container p {
+    position: relative;
+    top: 9px;
+    right: 30px;
+  }
+  .btn {
+    position: absolute;
+    left: 150px;
+  }
+}
+
+@media screen and (min-width: 521px) and (max-width: 755px) {
+  .greeting {
+    display: none;
+  }
+}
